@@ -116,7 +116,7 @@ body {
   @include onlySmoller(420px) {
     max-width: 600px;
     flex-direction: column;
-    height: 570px;
+    height: 600px;
   }
 }
 
@@ -168,7 +168,7 @@ ul:last-of-type {
   }
   @include onlySmoller(420px) {
     position: absolute;
-    top: 535px;
+    top: 555px;
   }
 }
 
