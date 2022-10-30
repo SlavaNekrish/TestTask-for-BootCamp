@@ -1,3 +1,5 @@
+@import "mixins";
+
 * {
   margin: 0;
   padding: 0;
@@ -110,7 +112,10 @@ body {
   background-color: #ffffff;
   color: black;
   display: flex;
-  // flex-direction: column;
+  @include onlySmoller(420px) {
+    max-width: 600px;
+    flex-direction: column;
+  }
 }
 
 .modal_character-backdrop {

@@ -1,0 +1,5 @@
+@mixin onlySmoller($w) {
+  @media (max-width: $w) {
+    @content;
+  }
+}

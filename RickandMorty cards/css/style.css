@@ -116,6 +116,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 420px) {
+    .modal_card {
+      max-width: 600px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .modal_character-backdrop {
   width: 100%;
