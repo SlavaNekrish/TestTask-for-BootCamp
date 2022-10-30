@@ -1,5 +1,4 @@
 const API_URL_CHARACTERS = "https://rickandmortyapi.com/api/character/";
-// const API_URL_DETAILS = "https://rickandmortyapi.com/api/character/2";
 const cardsEl = document.querySelector(".cards");
 
 async function getCards(url) {
@@ -35,6 +34,7 @@ getCards(API_URL_CHARACTERS)
   });
 
 // Modal 
+
 const modalEl = document.querySelector(".modal");
 
 async function openModal(ID) {
@@ -122,8 +122,25 @@ window.addEventListener('scroll', () => {
           `;
         cardEl.addEventListener('click', () => openModal(id));
         cardsEl.appendChild(cardEl); 
-        console.log(page);
       })
   });
   }
 })
+
+// анимация кнопки прокрутки "В начало"
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
