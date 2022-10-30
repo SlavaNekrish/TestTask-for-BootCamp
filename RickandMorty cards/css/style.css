@@ -124,7 +124,7 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      height: 600px; } }
+      height: 660px; } }
 
 .modal_character-backdrop {
   width: 100%;
@@ -168,7 +168,7 @@ ul:last-of-type li {
   @media (max-width: 420px) {
     .modal_button-close {
       position: absolute;
-      top: 555px; } }
+      top: 620px; } }
 
 .stop-scrolling {
   height: 100%;
