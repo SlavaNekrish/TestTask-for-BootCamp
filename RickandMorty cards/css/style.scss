@@ -112,9 +112,11 @@ body {
   background-color: #ffffff;
   color: black;
   display: flex;
+  position: relative;
   @include onlySmoller(420px) {
     max-width: 600px;
     flex-direction: column;
+    height: 570px;
   }
 }
 
@@ -124,21 +126,35 @@ body {
   margin: 0 auto;
 }
 
-
 ul li {
   list-style-type: none;
   width: 100px;
   margin-left: 50px;
+  @include onlySmoller(420px) {
+    margin-left: 10px;
+  }
 }
 
 ul:last-of-type li {
   margin-right: 50px;
 }
 
+ul:last-of-type {
+  @include onlySmoller(420px) {
+    position: absolute;
+    left: 150px;
+    top: 315px;
+  }
+}
+
 .modal_card_bold {
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 10px;
+  @include onlySmoller(420px) {
+    margin-bottom: 2px;
+    margin-top: 5px;
+  }
 }
 
 .modal_button-close {
@@ -149,6 +165,10 @@ ul:last-of-type li {
   img {
    width: 30px;
    height: 30px; 
+  }
+  @include onlySmoller(420px) {
+    position: absolute;
+    top: 535px;
   }
 }
 

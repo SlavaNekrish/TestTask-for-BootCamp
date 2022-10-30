@@ -115,14 +115,16 @@ body {
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
   @media (max-width: 420px) {
     .modal_card {
       max-width: 600px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      height: 570px; } }
 
 .modal_character-backdrop {
   width: 100%;
@@ -132,14 +134,27 @@ ul li {
   list-style-type: none;
   width: 100px;
   margin-left: 50px; }
+  @media (max-width: 420px) {
+    ul li {
+      margin-left: 10px; } }
 
 ul:last-of-type li {
   margin-right: 50px; }
+
+@media (max-width: 420px) {
+  ul:last-of-type {
+    position: absolute;
+    left: 150px;
+    top: 315px; } }
 
 .modal_card_bold {
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 10px; }
+  @media (max-width: 420px) {
+    .modal_card_bold {
+      margin-bottom: 2px;
+      margin-top: 5px; } }
 
 .modal_button-close {
   -ms-flex-item-align: start;
@@ -150,6 +165,10 @@ ul:last-of-type li {
   .modal_button-close img {
     width: 30px;
     height: 30px; }
+  @media (max-width: 420px) {
+    .modal_button-close {
+      position: absolute;
+      top: 535px; } }
 
 .stop-scrolling {
   height: 100%;
